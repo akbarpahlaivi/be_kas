@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice No</title>
+    <style> 
+      *
+      {
+        font-family: 'Open Sans', sans-serif;
+        color: #5b5b5b;  
+      }
+      .nota 
+      {
+        /*max-width: 300px; */
+        /* /width: 58mm;/ */
+        width: 88mm;
+        height: 100%;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+   
+      }
+      .isi-nota th
+      {
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        font-size: 12px; 
+        color: #5b5b5b;  
+        line-height: 18px; 
+        vertical-align: bottom; 
+        text-align: center;
+      }
+      .isi-nota td
+      { 
+        font-size: 12px; 
+        color: #5b5b5b;  
+        line-height: 18px; 
+        vertical-align: bottom;  
+      }
+      
+   
+    </style>
+   
+    <body>
+      <div class="nota"> 
+        <!-- ISI TOKO -->
+        <div class="toko">
+          <table width="100%" border="0" cellpadding='2' cellspacing="2" align="center" bgcolor="#ffffff" style="padding-top:4px;">
+            <tbody>
+              <tr>
+                <td style="font-size: 12px;  
+                  line-height: 18px; 
+                  vertical-align: bottom; 
+                  text-align: center;">            
+                  <strong style="font-size:16px;">Shop Name</strong>
+                  <br>phone: 0403 - 247830 322
+                  <br>TRN: 34231123123123
+                  <br> Court Road, Manjeri, Malappuram
+                </td>
+              </tr>
+              <tr>
+                <td height="2" colspan="0" style="border-bottom:1px solid #e4e4e4 "></td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+   
+        <!-- ISI HEADER --> 
+        <div class="header">
+          <table cellpadding="0" cellspacing="0" style="font-size: 12px; 
+                color: #5b5b5b;  
+                line-height: 18px; 
+                vertical-align: bottom; 
+                text-align: left;">
+            <tbody>
+              <tr>
+                <td>No. Bukti</td>
+                <td>&nbsp; : &nbsp;</td>
+                <td>2022031600000001</td>
+              </tr>
+              <tr>
+                <td>Tanggal</td>
+                <td>&nbsp; : &nbsp;</td>
+                <td>16-03-2022</td>
+              </tr>
+              <tr>
+                <td>Nama Akun</td>
+                <td>&nbsp; : &nbsp;</td>
+                <td>H00001 - HARTONO</td>
+              </tr>  
+            </tbody>
+          </table>   
+        </div> 
+   
+        <!-- ISI NOTA -->
+        <div class="isi-nota">
+          <table width="100%" border="0" cellpadding='0' cellspacing="0" align="center" bgcolor="#ffffff" style="padding-top:4px;">
+            <tr>
+              <th>No Akun</th>
+              <th>Nama Akun</th>
+              <th>Jumlah</th>
+            </tr>
+            <tbody>
+              <!-- FOREACH -->
+              <tr>
+                <td>41111</td>
+                <td style="line-height: 1.2">
+                  BIAYA SEWA - sewa forklift
+                  <br />
+                  1 X 99.000
+                </td>
+                <td style="text-align: right;">99.000</td>
+              </tr>
+              <tr>
+                <td>41102</td>
+                <td style="line-height: 1.2">
+                  BENSIN/SOLAR - bensin mobil
+                  <br />
+                  2 X 5.000
+                </td>
+                <td style="text-align: right;">2.500</td>
+              </tr>
+              <tr>
+                <td>11011</td>
+                <td style="line-height: 1.2">
+                  NGEMEL - Karyawan
+                  <br />
+                  3 X 1.300
+                </td>
+                <td style="text-align: right;">3.900</td>
+              </tr>
+            </tbody> 
+          </table>
+          <table width="100%" border="0" cellpadding='2' cellspacing="2" align="center" bgcolor="#ffffff" 
+          style="padding-top:4px;">
+            <tbody>
+              <tr>
+                <td height="2" colspan="0" style="border-bottom:1px solid #e4e4e4 "></td>
+              </tr> 
+            </tbody>
+          </table> 
+        </div>
+   
+        <!-- TOTAL NOTA -->
+        <div class="total">
+          <table width="100%" cellpadding="0" cellspacing="0" style="font-size: 12px;  
+                line-height: 18px; 
+                vertical-align: bottom; 
+                text-align: left;">
+            <tbody>            
+              <tr>
+                <td style="text-align: left; width:15%;"><strong>Sub Total</strong></td>
+                <td style="width:5%;">:</td>
+                <td style="text-align: right; width:45%;"><strong>Rp Sub Total</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left; width:15%;"><strong>Disc</strong></td>
+                <td style="width:5%;">:</td>
+                <td style="text-align: right; width:45%;"><strong>Rp disc</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left; width:15%;"><strong>Total</strong></td>
+                <td style="width:5%;">:</td>
+                <td style="text-align: right; width:45%;"><strong>Rp Total</strong></td>
+              </tr> 
+            </tbody>
+          </table>     
+        </div> 
+   
+        <!-- TUTUP -->
+        <div class="tutup">
+          <table width="100%" border="0" cellpadding='2' cellspacing="2" align="center" bgcolor="#ffffff" style="padding-top:4px;">
+            <tbody>
+              <tr>
+                <td height="2" colspan="0" style="border-bottom:1px solid #e4e4e4 "></td>
+              </tr>
+              <tr>
+                <td style="font-size: 12px;  
+                  line-height: 18px; 
+                  vertical-align: bottom; 
+                  text-align: center;">            
+                  <strong style="font-size:14px;">-Terima Kasih-</strong>
+                  <br>Barang Yang sudah dibeli tidak dapat dikembalikan 
+                </td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+   
+      </div>
+    </body>
+</html>

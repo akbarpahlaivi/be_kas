@@ -1,0 +1,50 @@
+<v-autocomplete 
+  v-model="selected.nomor"
+  :items="dataakun"
+  item-text="desk"
+  item-value="nomor"  
+  cache-items
+  :rules="[v => !!v || 'Item is required']"
+  label="POS Akun"
+  required  
+  class="pa-1" 
+  :search-input.sync="search"
+></v-autocomplete>  
+
+watch: {
+	search (val)
+	{ 
+	  this.isLoading = true
+	  val && val !== this.getpos(val) 
+	} 
+},
+
+async getpos(val){ 
+  this.loading = true; 
+  const datakirim = {
+	user: Constant.USER_APP,
+	token: Constant.TOKEN_APP,
+	idlog: Constant.IDLOG_APP, 
+	branch: Constant.BRANCH_APP, 
+	search: val,
+	idcabang: this.selectedcabang.nomor
+  };  
+  await axios
+	.post(Constant.API_ADDR + "perkiraan/daftarpos4", datakirim)
+	.then((response) => { 
+	  this.dataakun = response.data.data  
+	})
+	.catch((errros) => {
+	  console.log("error");
+	});
+  this.loading = false;
+}, 
+
+// cari cabang lama 
+$dheader = $this->model_permintaan->getdatah($idh);
+$oldcbg  = $dheader['cabang'];
+if($oldcbg != $idcbg)
+{
+	$this->response(['status'    => 104,
+					 'message'   => 'Data Cabang, Tidak Bisa dirubah'],200);  
+}

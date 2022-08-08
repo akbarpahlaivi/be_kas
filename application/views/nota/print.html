@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice No</title>
+    <style>
+      @font-face {
+        font-family: Arial;
+        /*src: url("./fonts/LED\ Dot-Matrix.ttf");*/
+      }
+      *,
+      ::before,
+      ::after {
+        color: #000;
+        margin: 0;
+        padding: 0;
+        font-family: matrix, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 12px;
+        font-weight: 300;
+      }
+      .container {
+        max-width: 300px;
+      }
+      .header {
+        margin-bottom: 4px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 17px;
+        padding-bottom: 10px;
+      }
+      table tr td {
+        padding-bottom: 6px;
+      }
+      .body td {
+        padding: 6px 0;
+      }
+      .body td:nth-child(1) {
+        width: 20%;
+      }
+      .body td:nth-child(2) {
+        width: 50%;
+      }
+      .body td:nth-child(3) {
+        width: 30%;
+        text-align: right;
+        vertical-align: bottom;
+      }
+      .body table thead tr td {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+      }
+      .body tfoot tr:first-child td {
+        border-top: 1px solid #000;
+      }
+      .body tfoot tr:last-child td {
+        border-bottom: 1px solid #000;
+      }
+      .body tfoot td:nth-child(1) {
+        width: 40%;
+      }
+      .body tfoot td:nth-child(3) {
+        width: 40%;
+        text-align: right;
+      }
+      .footer {
+        padding: 6px 0;
+      }
+      .footer p {
+        padding: 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">TITLE</h1>
+        <table cellpadding="0" cellspacing="0">
+          <tr>
+            <td>No. Bukti</td>
+            <td>&nbsp; : &nbsp;</td>
+            <td>2022031600000001</td>
+          </tr>
+          <tr>
+            <td>Tanggal</td>
+            <td>&nbsp; : &nbsp;</td>
+            <td>16-03-2022</td>
+          </tr>
+          <tr>
+            <td>Nama Akun</td>
+            <td>&nbsp; : &nbsp;</td>
+            <td>H00001 - HARTONO</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="body">
+        <table cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              <td>No Akun</td>
+              <td>Nama Akun</td>
+              <td>Jumlah</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>41111</td>
+              <td>BIAYA SEWA - sewa forklift</td>
+              <td>1 x 99.000</td>
+            </tr>
+            <tr>
+              <td>41102</td>
+              <td>BENSIN/SOLAR - bensin mobil</td>
+              <td>1 X 2.500</td>
+            </tr>
+            <tr>
+              <td>11011</td>
+              <td>NGEMEL - Karyawan</td>
+              <td>1 X 1.300</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <table cellpadding="0" cellspacing="0">
+          <tfoot>
+            <tr>
+              <td>Jumlah Item :</td>
+              <td>
+                <span style="opacity: 0">.</span>
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>TOTAL &nbsp; &nbsp; &nbsp; &nbsp; :</td>
+              <td>
+                <span style="opacity: 0">.</span>
+              </td>
+              <td>34.500.000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+
+      <div class="footer">
+        <div style="text-align: left">
+          <p>Card &nbsp;: * * * 2022</p>
+          <p>Admin : Djoko</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px">
+          <p>Tanks you for orders</p>
+          <p>
+            |∏∏∏∏∏∏∏∏∏∏∏|
+          </p>
+          <p>www.tripedia.com</p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script>
+    // window.print();
+  </script>
+</html>
